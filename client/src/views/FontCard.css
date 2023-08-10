@@ -1,0 +1,7 @@
+.font-card div {
+    font-variation-settings: 
+        "wdth" var(--text-width),
+        "opsz" var(--text-optical-size),
+        "slnt" var(--text-slant),
+        "ital" var(--text-italic);
+}

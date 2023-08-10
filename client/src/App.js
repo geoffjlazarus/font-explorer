@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import TypeViewer from './views/TypeViewer';
 import FontPairs from './views/FontPairs';
 import Header from './views/Header';
-import FontDetail from './views/FontDetail';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
           } />
 
           <Route path="/typeviewer" element={<TypeViewer />} />
-          <Route path="/fontdetail/:fontName" element={<FontDetail />} />
         </Routes>
 
 

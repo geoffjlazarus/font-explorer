@@ -1,3 +1,12 @@
+:root {
+  --text-weight: 400;
+  --text-tracking: 0px;
+  --text-width: 100;
+  --text-optical-size: 16;
+  --text-slant: 0;
+  --text-italic: 0;
+}
+
 
 .link-card {
   width: 80%;

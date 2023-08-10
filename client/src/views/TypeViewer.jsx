@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './TypeViewer.css'
 import FontCard from './FontCard';
@@ -11,6 +10,15 @@ export default function TypeViewer() {
     const [selectedFonts, setSelectedFonts] = useState([]);
     const [fontAdjustments, setFontAdjustments] = useState({});
     const [sampleText, setSampleText] = useState("The quick brown fox jumps over the lazy dog.");
+
+    const [cssVars, setCssVars] = useState({
+        '--text-weight': '400',
+        '--text-tracking': '0px',
+        '--text-width': '100',
+        '--text-optical-size': '16',
+        '--text-slant': '0',
+        '--text-italic': '0'
+    });
 
 
     useEffect(() => {
@@ -55,19 +63,64 @@ export default function TypeViewer() {
         }
     };
 
+    // const handleSliderChange = (fontFamily, property, value) => {
+    //     const cssVarMap = {
+    //         weight: '--text-weight',
+    //         tracking: '--text-tracking',
+    //         width: '--text-width',
+    //         opticalSize: '--text-optical-size',
+    //         slant: '--text-slant',
+    //         italic: '--text-italic'
+    //     };
+        
+    //     const adjustments = {
+    //         weight: value,
+    //         tracking: `${value}px`,
+    //         width: value,
+    //         opticalSize: value,
+    //         slant: value,
+    //         italic: value
+    //     };
+    
+    //     const adjustedValue = adjustments[property] || value;
+
+    //     setFontAdjustments(prev => {
+    //         const newState = {
+    //             ...prev,
+    //             [fontFamily]: {
+    //                 ...prev[fontFamily],
+    //                 [property]: parseFloat(adjustedValue)
+    //             }
+    //         };
+    //         console.log("Updated fontAdjustments:", newState);
+    //         return newState;
+    //     });
+    
+    //     // // Update the CSS variable state
+    //     // setCssVars(prev => ({
+    //     //     ...prev,
+    //     //     [cssVarMap[property]]: parseFloat(adjustedValue)
+    //     // }));
+    // };
+    
+
     const handleSliderChange = (fontFamily, property, value) => {
         const adjustments = {
-            width: `'wdth' ${value}`,
-            tracking: `${value}px`
+            weight: value,
+            tracking: `${value}px`,
+            width: value,
+            opticalSize: value,
+            slant: value,
+            italic: value
         };
-
+    
         const adjustedValue = adjustments[property] || value;
-
+    
         setFontAdjustments(prev => ({
             ...prev,
             [fontFamily]: {
                 ...prev[fontFamily],
-                [property]: adjustedValue
+                [property]: parseFloat(adjustedValue)
             }
         }));
     };
@@ -100,7 +153,8 @@ export default function TypeViewer() {
 
             {selectedFonts.map(font => (
             <div key={font.family}>   
-                <FontCard 
+                <FontCard
+                    style={cssVars} 
                     font={font} 
                     fontAdjustments={fontAdjustments} 
                     onSliderChange={handleSliderChange}

@@ -1,6 +1,7 @@
 .font-pairs-container {
     width: 80%;
     margin: 0 auto;
+    font-synthesis: none;
 }
 
 h2 {
