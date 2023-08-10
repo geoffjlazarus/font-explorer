@@ -1,7 +1,10 @@
 .font-view {
     font-size: 7.0vh;
-    background-color: #e0e0e0;
     text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #FFFFFF; 
+    
 }
 
 .font-view h3 {
@@ -13,7 +16,11 @@
 }
 
 input[type="range"] {
-    width: 300px;  /* Adjust this value as per your requirement */
+    width: 300px;
+}
+
+.description {
+    text-align: center;
 }
 
 
@@ -29,13 +36,15 @@ input[type="text"] {
     height: 80px;
     font-size: 3.0vh;
     border: 0px;
+    color: gray;
 }
 
 button {
-    margin-left: 50px;
-    height: 80px;
-    width: 200px;
-    font-size: 2.0vh;
+    margin-bottom: 20px;
+    margin: 10 auto;
+    height: 50px;
+    width: 100px;
+    font-size: 1.5vh;
     border-radius: 15px;
 }
 
@@ -43,6 +52,9 @@ button {
     padding: 10px;
     margin-bottom: 20px;
     background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f7f7f7; 
 }
 
 .font-title {

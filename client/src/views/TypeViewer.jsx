@@ -83,8 +83,9 @@ export default function TypeViewer() {
     };
 
     return (
+        <div>
+            <p className='description'>Explore 5 random samples of Google's top 50 variable fonts </p>
         <div className='font-view'>
-            
             <div className='input-block'>
                 <input 
                 type="text" 
@@ -106,6 +107,7 @@ export default function TypeViewer() {
                     sampleText={sampleText}
                 />
             ))}
+        </div>
         </div>
     );
 }
