@@ -71,14 +71,30 @@ export default function TypeViewer() {
         }));
     };
 
+    const refreshFonts = () => {
+        const tempFonts = [];
+        while (tempFonts.length < MAX_FONTS) {
+            const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+            if (!tempFonts.includes(randomFont)) {
+                tempFonts.push(randomFont);
+            }
+        }
+        setSelectedFonts(tempFonts);
+    };
+
     return (
         <div className='font-view'>
             
-            <input 
-            type="text" 
-            placeholder="The quick brown fox jumps over the lazy dog." 
-            value={sampleText} 
-            onChange={(e) => setSampleText(e.target.value)} />
+            <div className='input-block'>
+                <input 
+                type="text" 
+                placeholder="The quick brown fox jumps over the lazy dog." 
+                value={sampleText} 
+                onChange={(e) => setSampleText(e.target.value)} />
+                
+                <button onClick={refreshFonts}>Refresh Fonts</button>
+            </div>
+
 
             {selectedFonts.map(font => (
                 

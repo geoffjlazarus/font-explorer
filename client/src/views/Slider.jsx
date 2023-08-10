@@ -1,6 +1,8 @@
+import './Slider.css'
+
 export default function Slider({ label, min, max, step, value, onChange }) {
     return (
-        <div>
+        <div className="slider-text">
             <label>{label}</label>
             <input 
                 type="range" 

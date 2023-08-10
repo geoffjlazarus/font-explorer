@@ -1,10 +1,11 @@
-import { sample } from "underscore";
+
 import Slider from "./Slider";
 
 export default function FontCard({ font, fontAdjustments, onSliderChange, sampleText, setSampleText }) {
     return (
         <div className="single-font">
-            <h3 style={{ fontFamily: font.family }}>
+            <h3>
+            {/* <h3 style={{ fontFamily: font.family }}> */}
                 {font.family}
             </h3>
 

@@ -1,0 +1,17 @@
+.font-pair {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f7f7f7; 
+}
+
+.font-pair p {
+    font-size: 30px; 
+    margin: 10px 0;
+}
+
+.font-pair > div {
+    flex: 1;
+}
