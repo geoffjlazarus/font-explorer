@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './TypeViewer.css'
 import FontCard from './FontCard';
@@ -93,19 +94,19 @@ export default function TypeViewer() {
                 value={sampleText} 
                 onChange={(e) => setSampleText(e.target.value)} />
                 
-                <button onClick={refreshFonts}>Refresh Fonts</button>
+                <button onClick={refreshFonts}>Refresh</button>
             </div>
 
 
             {selectedFonts.map(font => (
-                
+            <div key={font.family}>   
                 <FontCard 
-                    key={font.family} 
                     font={font} 
                     fontAdjustments={fontAdjustments} 
                     onSliderChange={handleSliderChange}
                     sampleText={sampleText}
                 />
+            </div>
             ))}
         </div>
         </div>

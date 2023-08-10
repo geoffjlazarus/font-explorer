@@ -17,8 +17,6 @@ export default function FontCard({ font, fontAdjustments, onSliderChange, sample
             }}>
                 {sampleText}
             </div>
-
-            
             
             <Slider 
                 label="Weight:" 

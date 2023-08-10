@@ -22,7 +22,7 @@ function FontPairs() {
 
     return (
         <div className="font-pairs-container">
-            <h2>Explore font pairs</h2>
+            <h2>Explore randomised font pairs</h2>
             <button onClick={fetchFontPairs}>Refresh</button>
             <link 
                 href={`https://fonts.googleapis.com/css?family=${encodeURIComponent(fontFamilies)}&display=swap`} 

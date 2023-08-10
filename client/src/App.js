@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import TypeViewer from './views/TypeViewer';
 import FontPairs from './views/FontPairs';
 import Header from './views/Header';
+import FontDetail from './views/FontDetail';
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
           <Route path="/" element={
             <>
               <div className='link-card'>
-                Click here to view the type viewer: 
-                <Link to="/typeviewer">Here</Link>
+                <Link to="/typeviewer"><h2>Font Sampler</h2></Link>
+                <p>Explore 5 random fonts, and click into one for controls to manipulate the typeface</p>
               </div>
             </>
           } />
 
           <Route path="/typeviewer" element={<TypeViewer />} />
+          <Route path="/fontdetail/:fontName" element={<FontDetail />} />
         </Routes>
 
 
@@ -29,8 +31,8 @@ function App() {
           <Route path="/" element={
             <>
               <div className='link-card'>
-                Click here to view the font pairs: 
-                <Link to="/fontpairs">Here</Link>
+                <Link to="/fontpairs"><h2>Font Pairs</h2></Link>
+                <p>Explore 5 random font pairs, and click into one for controls to manipulate the typeface</p>
               </div> 
             </>
           } />
