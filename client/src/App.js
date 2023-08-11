@@ -44,8 +44,8 @@ function App() {
     <Route path="/" element={
         <>
             <div className='link-card'>
-                <Link to="/fontplayground"><h2>Font playground</h2></Link>
-                <p>Play around with a selected font to see how it looks</p>
+                <Link to="/fontplayground"><h2>Font Playground</h2></Link>
+                <p>Play around with a font to see how it looks</p>
             </div> 
         </>
     } />
