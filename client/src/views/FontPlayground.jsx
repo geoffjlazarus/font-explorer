@@ -8,7 +8,6 @@ export default function FontPlayground() {
     //const [userText, setUserText] = useState(placeholder);
 
     let placeholder = `
-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis purus quis ante sollicitudin fringilla. Vivamus ac mi hendrerit, condimentum lectus ac, maximus metus. Morbi laoreet massa et enim finibus faucibus. Donec et erat consectetur quam convallis aliquam. Suspendisse potenti. Fusce porttitor magna at ornare suscipit. Aenean finibus lorem sem, tincidunt luctus eros varius ut. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras orci urna, porttitor non vehicula ut, accumsan eu nisl. Praesent volutpat a leo et aliquet. Integer efficitur magna ac eros pretium, eget eleifend sem congue. Sed rhoncus laoreet rhoncus. Donec nisl massa, aliquet non aliquet ut, egestas eu odio. Vivamus feugiat elit non diam euismod, ut imperdiet tellus facilisis. Donec sit amet sem felis. Nunc imperdiet, turpis aliquam efficitur fringilla, nulla tellus ultrices erat, et dignissim metus nisl sed sapien. Praesent mollis eros vel fringilla posuere. Sed ornare venenatis neque, quis posuere ligula dictum eget. Vivamus auctor gravida ultricies. Maecenas vitae leo in urna vestibulum dapibus vitae eu quam. Curabitur rhoncus neque est, sed varius enim congue nec. Quisque sit amet sapien tristique, pulvinar nulla in, placerat felis.
     `
 
