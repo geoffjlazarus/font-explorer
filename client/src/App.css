@@ -21,6 +21,7 @@
 
 .link-card img {
   max-width: 60%;
+  border: 1px solid #e0e0e0
 }
 
 a {
