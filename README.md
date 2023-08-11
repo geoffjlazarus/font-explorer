@@ -21,6 +21,8 @@ Font Explorer has three primary features:
    Font Playground displays a randomised font from the top 50 variable fonts provided by the Google webfonts API. 
    This feature provides traditional text manipulation features: the ability to bold, italicise or underline the displayed text, the ability to change the colour of the displayed text, buttons to change the text alignment from left, center, right and justified. A slider allows the user to adjust the displayed font size. These manipulations change real time in the displayed Lorem Ipsum paragraph of sample text. An additional text field allows users to provide their own custom text.
 
+   [!image](https://i.imgur.com/7AiccMF.png)
+
 
 ## Technologies Used
 
