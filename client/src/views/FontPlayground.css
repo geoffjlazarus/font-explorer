@@ -14,6 +14,10 @@
     justify-content: center;
 }
 
+.alignment-buttons button {
+    border-radius: 1px;
+    background-color: white;
+}
 
 .text-features {
     font-size: 30px;
