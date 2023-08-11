@@ -5,6 +5,9 @@ import TypeViewer from './views/TypeViewer';
 import FontPairs from './views/FontPairs';
 import Header from './views/Header';
 import FontPlayground from './views/FontPlayground';
+import TypeViewerImage from './images/TypeViewer.png';
+import FontPairsImage from './images/FontPairs.png';
+import FontPlaygroundImage from './images/FontPlayground.png';
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
               <div className='link-card'>
                 <Link to="/typeviewer"><h2>Font Sampler</h2></Link>
                 <p>Explore 5 random fonts, and click into one for controls to manipulate the typeface</p>
+                <img src={TypeViewerImage} alt="" />
               </div>
             </>
           } />
@@ -32,6 +36,7 @@ function App() {
               <div className='link-card'>
                 <Link to="/fontpairs"><h2>Font Pairs</h2></Link>
                 <p>Explore 5 random font pairs, and click into one for controls to manipulate the typeface</p>
+                <img src={FontPairsImage} alt="" />
               </div> 
             </>
           } />
@@ -46,6 +51,7 @@ function App() {
             <div className='link-card'>
                 <Link to="/fontplayground"><h2>Font Playground</h2></Link>
                 <p>Play around with a font to see how it looks</p>
+                <img src={FontPlaygroundImage} alt="" />
             </div> 
         </>
     } />
