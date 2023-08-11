@@ -1,0 +1,36 @@
+.font-playground {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.font-playground button {
+    margin: 20px 0;
+}
+
+.input-block {
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-features {
+    font-size: 30px;
+}
+
+.text-features span {
+    padding: 20px;
+}
+
+.italicised {
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 800px;
+    height: 80px;
+    font-size: 3.0vh;
+    border: 0px;
+    color: gray;
+}

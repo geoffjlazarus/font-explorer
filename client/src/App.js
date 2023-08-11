@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import TypeViewer from './views/TypeViewer';
 import FontPairs from './views/FontPairs';
 import Header from './views/Header';
+import FontPlayground from './views/FontPlayground';
 
 function App() {
   return (
@@ -37,6 +38,21 @@ function App() {
 
           <Route path="/fontpairs" element={<FontPairs />} />
         </Routes>
+
+
+        <Routes>
+    <Route path="/" element={
+        <>
+            <div className='link-card'>
+                <Link to="/fontplayground"><h2>Font playground</h2></Link>
+                <p>Play around with a selected font to see how it looks</p>
+            </div> 
+        </>
+    } />
+    <Route path="/fontplayground" element={<FontPlayground />} />
+</Routes>
+
+
       </div>
     </Router>
   );
